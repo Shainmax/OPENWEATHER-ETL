@@ -1,0 +1,15 @@
+[2025-10-21T07:15:36.277+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_dag.transform_load_weather_data manual__2025-10-21T07:15:27.255389+00:00 [queued]>
+[2025-10-21T07:15:36.291+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_dag.transform_load_weather_data manual__2025-10-21T07:15:27.255389+00:00 [queued]>
+[2025-10-21T07:15:36.292+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2025-10-21T07:15:36.329+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_load_weather_data> on 2025-10-21 07:15:27.255389+00:00
+[2025-10-21T07:15:36.339+0000] {standard_task_runner.py:60} INFO - Started process 242 to run task
+[2025-10-21T07:15:36.345+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_dag', 'transform_load_weather_data', 'manual__2025-10-21T07:15:27.255389+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/w2.py', '--cfg-path', '/tmp/tmpezlitct1']
+[2025-10-21T07:15:36.349+0000] {standard_task_runner.py:88} INFO - Job 27: Subtask transform_load_weather_data
+[2025-10-21T07:15:36.446+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-21T07:15:36.751+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_dag.transform_load_weather_data manual__2025-10-21T07:15:27.255389+00:00 [running]> on host 64b2edade4b2
+[2025-10-21T07:15:37.704+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_dag' AIRFLOW_CTX_TASK_ID='transform_load_weather_data' AIRFLOW_CTX_EXECUTION_DATE='2025-10-21T07:15:27.255389+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-21T07:15:27.255389+00:00'
+[2025-10-21T07:15:37.883+0000] {logging_mixin.py:188} INFO - Data saved successfully to /opt/***/output/current_weather_data_delhi_21102025071537.csv
+[2025-10-21T07:15:37.886+0000] {python.py:201} INFO - Done. Returned value was: /opt/***/output/current_weather_data_delhi_21102025071537.csv
+[2025-10-21T07:15:38.156+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=weather_dag, task_id=transform_load_weather_data, execution_date=20251021T071527, start_date=20251021T071536, end_date=20251021T071538
+[2025-10-21T07:15:38.292+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-10-21T07:15:38.472+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

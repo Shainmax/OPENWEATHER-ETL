@@ -1,0 +1,17 @@
+[2025-11-14T01:52:47.128+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_dag.extract_weather_data scheduled__2025-11-13T00:00:00+00:00 [queued]>
+[2025-11-14T01:52:47.144+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_dag.extract_weather_data scheduled__2025-11-13T00:00:00+00:00 [queued]>
+[2025-11-14T01:52:47.145+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2025-11-14T01:52:47.167+0000] {taskinstance.py:2191} INFO - Executing <Task(HttpOperator): extract_weather_data> on 2025-11-13 00:00:00+00:00
+[2025-11-14T01:52:47.174+0000] {standard_task_runner.py:60} INFO - Started process 865 to run task
+[2025-11-14T01:52:47.177+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'weather_dag', 'extract_weather_data', 'scheduled__2025-11-13T00:00:00+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/w2.py', '--cfg-path', '/tmp/tmpp1qndbj1']
+[2025-11-14T01:52:47.180+0000] {standard_task_runner.py:88} INFO - Job 39: Subtask extract_weather_data
+[2025-11-14T01:52:47.234+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-11-14T01:52:47.358+0000] {task_command.py:423} INFO - Running <TaskInstance: weather_dag.extract_weather_data scheduled__2025-11-13T00:00:00+00:00 [running]> on host 64b2edade4b2
+[2025-11-14T01:52:48.097+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_dag' AIRFLOW_CTX_TASK_ID='extract_weather_data' AIRFLOW_CTX_EXECUTION_DATE='2025-11-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-13T00:00:00+00:00'
+[2025-11-14T01:52:48.099+0000] {http.py:169} INFO - Calling HTTP method
+[2025-11-14T01:52:48.130+0000] {base.py:83} INFO - Using connection ID 'weathermap_api' for task execution.
+[2025-11-14T01:52:48.158+0000] {base.py:83} INFO - Using connection ID 'weathermap_api' for task execution.
+[2025-11-14T01:52:48.206+0000] {http.py:208} INFO - {"coord":{"lon":77.2167,"lat":28.6667},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50d"}],"base":"stations","main":{"temp":285.2,"feels_like":284.45,"temp_min":285.2,"temp_max":285.2,"pressure":1017,"humidity":76,"sea_level":1017,"grnd_level":992},"visibility":1000,"wind":{"speed":1.03,"deg":240},"clouds":{"all":0},"dt":1763084997,"sys":{"type":1,"id":9165,"country":"IN","sunrise":1763082783,"sunset":1763121494},"timezone":19800,"id":1273294,"name":"Delhi","cod":200}
+[2025-11-14T01:52:48.347+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=weather_dag, task_id=extract_weather_data, execution_date=20251113T000000, start_date=20251114T015247, end_date=20251114T015248
+[2025-11-14T01:52:48.399+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-11-14T01:52:48.507+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

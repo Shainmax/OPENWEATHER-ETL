@@ -1,0 +1,2 @@
+City,Description,Temperature (F),Feels Like (F),Minimum Temp (F),Maximum Temp (F),Pressure,Humidity,Wind Speed,Time of Record,Sunrise (Local Time),Sunset (Local Time)
+Delhi,haze,89.69000000000003,90.23000000000005,89.69000000000003,89.69000000000003,1009,40,2.06,2025-10-20 15:51:13,2025-10-20 06:24:47,2025-10-20 17:46:47
