@@ -58,10 +58,4 @@ This project is a data engineering pipeline implemented using Apache Airflow on 
 - Consider setting up monitoring and alerting for the pipeline to detect and handle failures.
 - Ensure proper error handling and logging in the Airflow DAGs for troubleshooting.
 
-## Contributors
 
-- Ritesh Ojha
-
-## Contact
-
-For questions or feedback, please contact riteshojha2002@gmail.com.
